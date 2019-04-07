@@ -1,0 +1,3 @@
+home:
+   path: /home
+   controller: App\Controller\Api::home
