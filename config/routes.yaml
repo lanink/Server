@@ -1,0 +1,11 @@
+Home:
+    path: /
+    controller: App\Controller\ApiCtl::Home
+
+Introduce:
+    path: /introduce/{bookId<\d+>?1}
+    controller: App\Controller\ApiCtl::Introduce
+            
+Chapter:
+    path: /chapter/{chapterId<\d+>?1}
+    controller: App\Controller\ApiCtl::Chapter
