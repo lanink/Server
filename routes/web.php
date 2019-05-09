@@ -14,3 +14,11 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/list', 'ApiController@list');
+
+$router->get('/book/{bookId:[\d]}' , 'ApiController@book');
+
+$router->get('/chapter/{chapterId:[\d]}' , 'ApiController@chapter');
+
+$router->get('/run' , 'TaskController@run');
