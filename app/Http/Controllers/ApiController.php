@@ -20,7 +20,8 @@
                 'author as Author',
                 'descript as Descript',
                 'client as Hits',
-                'time as UpdateTime'
+                'time as UpdateTime',
+                'cover as Cover'
             ];
 
             $list = DB::table('book')
