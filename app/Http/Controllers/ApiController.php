@@ -38,7 +38,8 @@
                 'title as BookTitle',
                 'author as Author',
                 'descript as Descript',
-                'client as Hits'
+                'client as Hits',
+                'cover as Cover'
             ];
 
             $book = DB::table('book')->select($select)->find($bookId);
@@ -54,7 +55,7 @@
                     ->select($select)
                     ->where('bid' , $bookId)->get();
 
-                $book->chapter = $chapters;
+                $book->Chapter = $chapters;
             }
 
 
